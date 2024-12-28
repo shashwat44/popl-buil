@@ -52,7 +52,7 @@ var NativeAudio = /** @class */ (function (_super) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-tabs>\n  <ion-tab-bar slot=\"bottom\">\n\n    <ion-tab-button tab=\"home\">\n      <ion-icon name=\"home-outline\"></ion-icon>\n      <ion-label>Home</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"category\">\n      <ion-icon name=\"apps\"></ion-icon>\n      <ion-label>Brand</ion-label>\n    </ion-tab-button>\n\n    <!-- <img (click)=\"playCarSound()\" style=\"    height: 54px;\n    width: 65px;\" src=\"../../../assets/img/logo-title.png\"> -->\n    <!-- <audio controls>\n      <source src=\"https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3\" type=\"audio/ogg\">\n      \n    </audio> -->\n    <ion-tab-button tab=\"menu\">\n      <ion-icon name=\"car-sport-outline\"></ion-icon>\n      <ion-label>All Cars</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"contact\">\n      <ion-icon name=\"person\"></ion-icon>\n      <ion-label>Contact Us</ion-label>\n    </ion-tab-button>\n \n\n  </ion-tab-bar>\n\n\n\n</ion-tabs>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-tabs>\n  <ion-tab-bar slot=\"bottom\">\n\n    <ion-tab-button tab=\"home\">\n      <ion-icon name=\"home-outline\"></ion-icon>\n      <ion-label>Home</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"csd-car-brands\">\n      <ion-icon name=\"apps\"></ion-icon>\n      <ion-label>Brand</ion-label>\n    </ion-tab-button>\n\n    <!-- <img (click)=\"playCarSound()\" style=\"    height: 54px;\n    width: 65px;\" src=\"../../../assets/img/logo-title.png\"> -->\n    <!-- <audio controls>\n      <source src=\"https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3\" type=\"audio/ogg\">\n      \n    </audio> -->\n    <ion-tab-button tab=\"all-csd-cars\">\n      <ion-icon name=\"car-sport-outline\"></ion-icon>\n      <ion-label>All Cars</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"contact\">\n      <ion-icon name=\"person\"></ion-icon>\n      <ion-label>Contact Us</ion-label>\n    </ion-tab-button>\n \n\n  </ion-tab-bar>\n\n\n\n</ion-tabs>\n");
 
 /***/ }),
 
@@ -84,19 +84,19 @@ const routes = [
                 loadChildren: () => __webpack_require__.e(/*! import() | home-home-module */ "home-home-module").then(__webpack_require__.bind(null, /*! ../home/home.module */ "./src/app/pages/home/home.module.ts")).then(m => m.HomePageModule)
             },
             {
-                path: "category",
+                path: "csd-car-brands",
                 loadChildren: () => __webpack_require__.e(/*! import() | category-category-module */ "category-category-module").then(__webpack_require__.bind(null, /*! ../category/category.module */ "./src/app/pages/category/category.module.ts")).then(m => m.CategoryPageModule)
             },
             {
-                path: "menu",
-                loadChildren: () => Promise.all(/*! import() | menu-menu-module */[__webpack_require__.e("default~menu-menu-module~pages-feedback-feedback-module"), __webpack_require__.e("menu-menu-module")]).then(__webpack_require__.bind(null, /*! ../menu/menu.module */ "./src/app/pages/menu/menu.module.ts")).then(m => m.MenuPageModule)
+                path: "all-csd-cars",
+                loadChildren: () => __webpack_require__.e(/*! import() | menu-menu-module */ "menu-menu-module").then(__webpack_require__.bind(null, /*! ../menu/menu.module */ "./src/app/pages/menu/menu.module.ts")).then(m => m.MenuPageModule)
             },
             {
-                path: "menu/:id",
-                loadChildren: () => Promise.all(/*! import() | menu-menu-module */[__webpack_require__.e("default~menu-menu-module~pages-feedback-feedback-module"), __webpack_require__.e("menu-menu-module")]).then(__webpack_require__.bind(null, /*! ../menu/menu.module */ "./src/app/pages/menu/menu.module.ts")).then(m => m.MenuPageModule)
+                path: "all-csd-cars/:id",
+                loadChildren: () => __webpack_require__.e(/*! import() | menu-menu-module */ "menu-menu-module").then(__webpack_require__.bind(null, /*! ../menu/menu.module */ "./src/app/pages/menu/menu.module.ts")).then(m => m.MenuPageModule)
             },
             {
-                path: "productDetails/:id",
+                path: "csd-car-details/:id",
                 loadChildren: () => Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ../productDetails/productDetails.module */ "./src/app/pages/productDetails/productDetails.module.ts")).then(m => m.ProductDetailsPageModule)
             },
             {
@@ -110,10 +110,6 @@ const routes = [
             {
                 path: 'search/:from',
                 loadChildren: () => __webpack_require__.e(/*! import() | search-search-module */ "search-search-module").then(__webpack_require__.bind(null, /*! ../search/search.module */ "./src/app/pages/search/search.module.ts")).then(m => m.SearchPageModule)
-            },
-            {
-                path: 'wishList',
-                loadChildren: () => __webpack_require__.e(/*! import() | wishList-wishList-module */ "wishList-wishList-module").then(__webpack_require__.bind(null, /*! ../wishList/wishList.module */ "./src/app/pages/wishList/wishList.module.ts")).then(m => m.WishListModule)
             },
         ],
     },

@@ -112,7 +112,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-tabs>\n  <ion-tab-bar slot=\"bottom\">\n\n    <ion-tab-button tab=\"home\">\n      <ion-icon name=\"home-outline\"></ion-icon>\n      <ion-label>Home</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"category\">\n      <ion-icon name=\"apps\"></ion-icon>\n      <ion-label>Brand</ion-label>\n    </ion-tab-button>\n\n    <!-- <img (click)=\"playCarSound()\" style=\"    height: 54px;\n    width: 65px;\" src=\"../../../assets/img/logo-title.png\"> -->\n    <!-- <audio controls>\n      <source src=\"https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3\" type=\"audio/ogg\">\n      \n    </audio> -->\n    <ion-tab-button tab=\"menu\">\n      <ion-icon name=\"car-sport-outline\"></ion-icon>\n      <ion-label>All Cars</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"contact\">\n      <ion-icon name=\"person\"></ion-icon>\n      <ion-label>Contact Us</ion-label>\n    </ion-tab-button>\n \n\n  </ion-tab-bar>\n\n\n\n</ion-tabs>\n";
+    __webpack_exports__["default"] = "<ion-tabs>\n  <ion-tab-bar slot=\"bottom\">\n\n    <ion-tab-button tab=\"home\">\n      <ion-icon name=\"home-outline\"></ion-icon>\n      <ion-label>Home</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"csd-car-brands\">\n      <ion-icon name=\"apps\"></ion-icon>\n      <ion-label>Brand</ion-label>\n    </ion-tab-button>\n\n    <!-- <img (click)=\"playCarSound()\" style=\"    height: 54px;\n    width: 65px;\" src=\"../../../assets/img/logo-title.png\"> -->\n    <!-- <audio controls>\n      <source src=\"https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3\" type=\"audio/ogg\">\n      \n    </audio> -->\n    <ion-tab-button tab=\"all-csd-cars\">\n      <ion-icon name=\"car-sport-outline\"></ion-icon>\n      <ion-label>All Cars</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"contact\">\n      <ion-icon name=\"person\"></ion-icon>\n      <ion-label>Contact Us</ion-label>\n    </ion-tab-button>\n \n\n  </ion-tab-bar>\n\n\n\n</ion-tabs>\n";
     /***/
   },
 
@@ -175,7 +175,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           });
         }
       }, {
-        path: "category",
+        path: "csd-car-brands",
         loadChildren: function loadChildren() {
           return __webpack_require__.e(
           /*! import() | category-category-module */
@@ -186,29 +186,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           });
         }
       }, {
-        path: "menu",
+        path: "all-csd-cars",
         loadChildren: function loadChildren() {
-          return Promise.all(
+          return __webpack_require__.e(
           /*! import() | menu-menu-module */
-          [__webpack_require__.e("default~menu-menu-module~pages-feedback-feedback-module"), __webpack_require__.e("menu-menu-module")]).then(__webpack_require__.bind(null,
+          "menu-menu-module").then(__webpack_require__.bind(null,
           /*! ../menu/menu.module */
           "./src/app/pages/menu/menu.module.ts")).then(function (m) {
             return m.MenuPageModule;
           });
         }
       }, {
-        path: "menu/:id",
+        path: "all-csd-cars/:id",
         loadChildren: function loadChildren() {
-          return Promise.all(
+          return __webpack_require__.e(
           /*! import() | menu-menu-module */
-          [__webpack_require__.e("default~menu-menu-module~pages-feedback-feedback-module"), __webpack_require__.e("menu-menu-module")]).then(__webpack_require__.bind(null,
+          "menu-menu-module").then(__webpack_require__.bind(null,
           /*! ../menu/menu.module */
           "./src/app/pages/menu/menu.module.ts")).then(function (m) {
             return m.MenuPageModule;
           });
         }
       }, {
-        path: "productDetails/:id",
+        path: "csd-car-details/:id",
         loadChildren: function loadChildren() {
           return Promise.resolve().then(__webpack_require__.bind(null,
           /*! ../productDetails/productDetails.module */
@@ -247,17 +247,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           /*! ../search/search.module */
           "./src/app/pages/search/search.module.ts")).then(function (m) {
             return m.SearchPageModule;
-          });
-        }
-      }, {
-        path: 'wishList',
-        loadChildren: function loadChildren() {
-          return __webpack_require__.e(
-          /*! import() | wishList-wishList-module */
-          "wishList-wishList-module").then(__webpack_require__.bind(null,
-          /*! ../wishList/wishList.module */
-          "./src/app/pages/wishList/wishList.module.ts")).then(function (m) {
-            return m.WishListModule;
           });
         }
       }]
