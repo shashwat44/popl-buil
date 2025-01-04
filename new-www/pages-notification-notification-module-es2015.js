@@ -1,5 +1,18 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["pages-notification-notification-module"],{
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/notification/maruti-csd/maruti-csd.html":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/notification/maruti-csd/maruti-csd.html ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-icon\n        style=\"margin-left: 10px; font-size: 21px\"\n        routerLink=\"/csd-car-blogs\"\n        name=\"arrow-back-outline\"\n      ></ion-icon>\n    </ion-buttons>\n    <ion-title> Maruti CSD Price </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <br>\n        <h1>The Ultimate Guide to CSD Maruti Cars and Their Prices</h1>\n    \n      <section>\n        <p>Are you in the market for a Maruti car through the Canteen Stores Department (CSD)? You're not alone! Maruti Suzuki, India's largest automobile manufacturer, is a favorite among CSD beneficiaries, offering affordable, fuel-efficient, and reliable vehicles. Here's everything you need to know about buying a Maruti car through the CSD and understanding its pricing.</p>\n    \n        <h2>What is the CSD?</h2>\n        <p>The Canteen Stores Department (CSD) provides active and retired personnel of the armed forces, paramilitary, and defense services access to goods at subsidized prices. These include daily essentials, household appliances, and even automobiles like Maruti cars. By purchasing through CSD, eligible individuals can save significantly on vehicle costs due to exemptions on GST, excise duties, and registration charges.</p>\n    \n        <h2>Why Choose Maruti Suzuki?</h2>\n        <p>Maruti Suzuki has been a trusted name in the Indian automotive market for decades. Known for its:</p>\n        <ul>\n          <li><strong>Wide Range of Models:</strong> From compact hatchbacks like Alto and WagonR to sedans like Ciaz and SUVs like Grand Vitara, Maruti has something for everyone.</li>\n          <li><strong>Fuel Efficiency:</strong> Maruti’s vehicles are synonymous with fuel savings, making them a practical choice.</li>\n          <li><strong>Affordable Maintenance:</strong> With widespread service centers and low maintenance costs, owning a Maruti car is hassle-free.</li>\n          <li><strong>Resale Value:</strong> Maruti cars retain excellent resale value compared to competitors.</li>\n        </ul>\n    \n        <h2>Popular Maruti Cars Available in CSD</h2>\n        <div class=\"model-list\">\n          <div class=\"model-item\">\n            <h3>Maruti Alto K10</h3>\n            <p><strong>Price:</strong> Starting from ₹3.60 lakhs (CSD Price)</p>\n            <p><strong>Why Choose:</strong> Compact design, fuel-efficient engine, perfect for city drives.</p>\n          </div>\n          <div class=\"model-item\">\n            <h3>Maruti WagonR</h3>\n            <p><strong>Price:</strong> Starting from ₹4.80 lakhs (CSD Price)</p>\n            <p><strong>Why Choose:</strong> Spacious interiors, tall-boy design, and excellent mileage.</p>\n          </div>\n          <div class=\"model-item\">\n            <h3>Maruti Swift</h3>\n            <p><strong>Price:</strong> Starting from ₹5.90 lakhs (CSD Price)</p>\n            <p><strong>Why Choose:</strong> Sporty looks, peppy engine, and advanced features.</p>\n          </div>\n          <div class=\"model-item\">\n            <h3>Maruti Baleno</h3>\n            <p><strong>Price:</strong> Starting from ₹6.30 lakhs (CSD Price)</p>\n            <p><strong>Why Choose:</strong> Premium hatchback with modern styling and a feature-rich cabin.</p>\n          </div>\n          <div class=\"model-item\">\n            <h3>Maruti Dzire</h3>\n            <p><strong>Price:</strong> Starting from ₹6.50 lakhs (CSD Price)</p>\n            <p><strong>Why Choose:</strong> Compact sedan with class-leading comfort and fuel economy.</p>\n          </div>\n          <div class=\"model-item\">\n            <h3>Maruti Brezza</h3>\n            <p><strong>Price:</strong> Starting from ₹8.30 lakhs (CSD Price)</p>\n            <p><strong>Why Choose:</strong> Stylish compact SUV with great ground clearance and tech features.</p>\n          </div>\n          <div class=\"model-item\">\n            <h3>Maruti Grand Vitara</h3>\n            <p><strong>Price:</strong> Starting from ₹11.20 lakhs (CSD Price)</p>\n            <p><strong>Why Choose:</strong> Premium SUV with hybrid technology and bold design.</p>\n          </div>\n        </div>\n    \n        <h2>Steps to Purchase a Maruti Car Through CSD</h2>\n        <ol>\n          <li><strong>Eligibility Check:</strong> Ensure you meet the CSD eligibility criteria as a serving or retired defense personnel.</li>\n          <li><strong>Obtain CSD Application Form:</strong> Download the form online or get it from your unit canteen.</li>\n          <li><strong>Choose a Model:</strong> Select the Maruti car model that fits your needs and budget.</li>\n          <li><strong>Quote Request:</strong> Approach an authorized Maruti CSD dealer to get a price quote.</li>\n          <li><strong>Document Submission:</strong> Submit all required documents, including your CSD card, salary certificate, and identification proof.</li>\n          <li><strong>Payment & Delivery:</strong> After approval, make the payment as per the CSD billing terms and take delivery of your car.</li>\n        </ol>\n    \n        <h2>Benefits of Buying Through CSD</h2>\n        <ul>\n          <li><strong>Substantial Savings:</strong> Avail of tax exemptions and lower dealer margins.</li>\n          <li><strong>Hassle-Free Registration:</strong> Dealers often assist with vehicle registration and other formalities.</li>\n          <li><strong>Warranty & Services:</strong> Enjoy the same manufacturer warranty and after-sales services as regular buyers.</li>\n        </ul>\n    \n        <p>Buying a Maruti car through CSD is a smart choice for defense personnel looking to own a reliable vehicle at an affordable price. With a wide range of models to choose from and significant cost savings, it’s no wonder Maruti Suzuki remains a top choice in the CSD lineup. Stay updated with the latest CSD prices and offers by visiting your nearest CSD-authorized Maruti dealership. Drive home your dream car today!</p>\n    \n      </section>\n    \n      \n    \n\n  </ion-content>\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/notification/notification.html":
 /*!********************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/notification/notification.html ***!
@@ -9,7 +22,50 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <!-- <ion-menu-button style=\"color: white;\"></ion-menu-button> -->\n      <ion-menu-button>\n        <img src=\"../../../assets/img/menu-bar.png\" style=\"width: 22px;\">\n      </ion-menu-button>\n    </ion-buttons>\n    <ion-title>\n      CSD CAR\n    </ion-title>\n     <ion-buttons slot=\"end\">\n      <ion-button [routerLink]=\"['/cart']\">\n        <ion-icon slot=\"icon-only\" name=\"cart\" style=\"color: white;\"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n  </ion-toolbar>\n  <ion-toolbar>\n    <div class=\"searchContainer\">\n     <ion-searchbar   [(ngModel)]=\"searchWord\" placeholder=\"Search food or Restaurant\" color=\"light\" animated>\n      </ion-searchbar>\n    </div>\n  </ion-toolbar>\n</ion-header>\n<ion-content padding>\n  <img src=\"../../../assets/img/noRecordsFound.jpg\" style=\"    margin-left: 27px;\">\n  <div class=\"table-responsive\">\n    <table class=\"table\">\n      <!-- <thead>\n                <tr>\n                    <th>Image</th>\n                    <th>Name</th>\n                    <th>Type</th>\n                    <th class=\"text-right\">Description</th>\n                </tr>\n            </thead> -->\n      <tbody *ngIf=\"inboxList\">\n        <tr *ngFor=\"let list of inboxList\">\n          <td> <img src=\"{{list.productImage}}\" style=\"height: 50px;width: 50px;\"></td>\n          <td>{{list.productName}}</td>\n          <td>{{list.complainType}}</td>\n          <td class=\"text-right\">{{list.problemDes}}</td>\n        </tr>\n      </tbody>\n      <ion-row>\n        <span class=\"noRecordsFound\">No Records Found</span>\n      </ion-row>\n    </table>\n  </div>\n</ion-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <!-- <ion-menu-button style=\"color: white;\"></ion-menu-button> -->\n      <ion-menu-button>\n        <img src=\"../../../assets/img/menu-bar.png\" style=\"width: 22px;\" />\n      </ion-menu-button>\n    </ion-buttons>\n    <ion-title>\n      CSD CAR - All Blogs\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <!-- Card 1 -->\n      <ion-col\n        size=\"6\"\n        size-md=\"4\"\n        [routerLink]=\"['/csd-car-blogs/maruti-csd-car-price' ]\"\n      >\n        <ion-card>\n          <img\n            alt=\"CSD Price Maruti \"\n            src=\"https://csd-car-images.s3.ap-south-1.amazonaws.com/csd-car-maruti-xl6.webp\"\n          />\n          <ion-card-header>\n            <ion-card-title>CSD Price Maruti</ion-card-title>\n            <ion-card-subtitle\n              >Discover the latest pricing and offers on CSD Maruti cars – check\n              out our detailed pricing guide for the best\n              deals!\"</ion-card-subtitle\n            >\n          </ion-card-header>\n\n          <ion-card-content>\n            Maruti Suzuki has been a trusted name in the Indian automotive\n            market for decades. Known for its: Wide Range of Models: From\n            compact hatchbacks like Alto and WagonR to sedans like Ciaz and SUVs\n            like Grand Vitara, Maruti has something for everyone.\n          </ion-card-content>\n        </ion-card>\n      </ion-col>\n      <ion-col\n        size=\"6\"\n        size-md=\"4\"\n        \n      >\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n");
+
+/***/ }),
+
+/***/ "./src/app/pages/notification/maruti-csd/maruti-csd.scss":
+/*!***************************************************************!*\
+  !*** ./src/app/pages/notification/maruti-csd/maruti-csd.scss ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("h1 {\n  margin-left: 20px;\n}\n\nsection {\n  padding: 20px;\n  max-width: 1000px;\n  margin: auto;\n  background-color: #fff;\n  margin-top: 20px;\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n}\n\nh2 {\n  color: #333;\n}\n\np {\n  color: #555;\n  font-size: 1.1em;\n}\n\n.model-list {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 20px;\n}\n\n.model-item {\n  background-color: #e9ecef;\n  padding: 15px;\n  border-radius: 8px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n}\n\n.model-item h3 {\n  margin-top: 0;\n}\n\n.cta-button {\n  background-color: #28a745;\n  color: #fff;\n  padding: 10px 20px;\n  text-align: center;\n  border-radius: 5px;\n  text-decoration: none;\n  display: inline-block;\n  margin-top: 20px;\n}\n\n.cta-button:hover {\n  background-color: #218838;\n}\n\nfooter {\n  text-align: center;\n  padding: 20px;\n  background-color: #333;\n  color: #fff;\n  margin-top: 20px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9zaGFzaHdhdC9Eb2N1bWVudHMvYm1kYy1jbGllbnQvc3JjL2FwcC9wYWdlcy9ub3RpZmljYXRpb24vbWFydXRpLWNzZC9tYXJ1dGktY3NkLnNjc3MiLCJzcmMvYXBwL3BhZ2VzL25vdGlmaWNhdGlvbi9tYXJ1dGktY3NkL21hcnV0aS1jc2Quc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDRTtFQUNFLGlCQUFBO0FDQUo7O0FERUU7RUFDRSxhQUFBO0VBQ0EsaUJBQUE7RUFDQSxZQUFBO0VBQ0Esc0JBQUE7RUFDQSxnQkFBQTtFQUNBLHdDQUFBO0FDQ0o7O0FEQ0U7RUFDRSxXQUFBO0FDRUo7O0FEQUU7RUFDRSxXQUFBO0VBQ0EsZ0JBQUE7QUNHSjs7QURERTtFQUNFLGFBQUE7RUFDQSw4QkFBQTtFQUNBLFNBQUE7QUNJSjs7QURGRTtFQUNFLHlCQUFBO0VBQ0EsYUFBQTtFQUNBLGtCQUFBO0VBQ0Esd0NBQUE7QUNLSjs7QURIRTtFQUNFLGFBQUE7QUNNSjs7QURKRTtFQUNFLHlCQUFBO0VBQ0EsV0FBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtFQUNBLHFCQUFBO0VBQ0EscUJBQUE7RUFDQSxnQkFBQTtBQ09KOztBRExFO0VBQ0UseUJBQUE7QUNRSjs7QURORTtFQUNFLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsV0FBQTtFQUNBLGdCQUFBO0FDU0oiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9ub3RpZmljYXRpb24vbWFydXRpLWNzZC9tYXJ1dGktY3NkLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIgXG4gIGgxIHtcbiAgICBtYXJnaW4tbGVmdDogMjBweFxuICB9XG4gIHNlY3Rpb24ge1xuICAgIHBhZGRpbmc6IDIwcHg7XG4gICAgbWF4LXdpZHRoOiAxMDAwcHg7XG4gICAgbWFyZ2luOiBhdXRvO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gICAgbWFyZ2luLXRvcDogMjBweDtcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICB9XG4gIGgyIHtcbiAgICBjb2xvcjogIzMzMztcbiAgfVxuICBwIHtcbiAgICBjb2xvcjogIzU1NTtcbiAgICBmb250LXNpemU6IDEuMWVtO1xuICB9XG4gIC5tb2RlbC1saXN0IHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmcjtcbiAgICBnYXA6IDIwcHg7XG4gIH1cbiAgLm1vZGVsLWl0ZW0ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNlOWVjZWY7XG4gICAgcGFkZGluZzogMTVweDtcbiAgICBib3JkZXItcmFkaXVzOiA4cHg7XG4gICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgfVxuICAubW9kZWwtaXRlbSBoMyB7XG4gICAgbWFyZ2luLXRvcDogMDtcbiAgfVxuICAuY3RhLWJ1dHRvbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzI4YTc0NTtcbiAgICBjb2xvcjogI2ZmZjtcbiAgICBwYWRkaW5nOiAxMHB4IDIwcHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIG1hcmdpbi10b3A6IDIwcHg7XG4gIH1cbiAgLmN0YS1idXR0b246aG92ZXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMyMTg4Mzg7XG4gIH1cbiAgZm9vdGVyIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgcGFkZGluZzogMjBweDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMzMzO1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIG1hcmdpbi10b3A6IDIwcHg7XG4gIH0iLCJoMSB7XG4gIG1hcmdpbi1sZWZ0OiAyMHB4O1xufVxuXG5zZWN0aW9uIHtcbiAgcGFkZGluZzogMjBweDtcbiAgbWF4LXdpZHRoOiAxMDAwcHg7XG4gIG1hcmdpbjogYXV0bztcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbiAgbWFyZ2luLXRvcDogMjBweDtcbiAgYm94LXNoYWRvdzogMCA0cHggOHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbn1cblxuaDIge1xuICBjb2xvcjogIzMzMztcbn1cblxucCB7XG4gIGNvbG9yOiAjNTU1O1xuICBmb250LXNpemU6IDEuMWVtO1xufVxuXG4ubW9kZWwtbGlzdCB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmcjtcbiAgZ2FwOiAyMHB4O1xufVxuXG4ubW9kZWwtaXRlbSB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNlOWVjZWY7XG4gIHBhZGRpbmc6IDE1cHg7XG4gIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbn1cblxuLm1vZGVsLWl0ZW0gaDMge1xuICBtYXJnaW4tdG9wOiAwO1xufVxuXG4uY3RhLWJ1dHRvbiB7XG4gIGJhY2tncm91bmQtY29sb3I6ICMyOGE3NDU7XG4gIGNvbG9yOiAjZmZmO1xuICBwYWRkaW5nOiAxMHB4IDIwcHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgbWFyZ2luLXRvcDogMjBweDtcbn1cblxuLmN0YS1idXR0b246aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjE4ODM4O1xufVxuXG5mb290ZXIge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBhZGRpbmc6IDIwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICMzMzM7XG4gIGNvbG9yOiAjZmZmO1xuICBtYXJnaW4tdG9wOiAyMHB4O1xufSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/pages/notification/maruti-csd/maruti-csd.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/pages/notification/maruti-csd/maruti-csd.ts ***!
+  \*************************************************************/
+/*! exports provided: CsdMarutiCarPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CsdMarutiCarPage", function() { return CsdMarutiCarPage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let CsdMarutiCarPage = class CsdMarutiCarPage {
+    ngOnInit() {
+    }
+};
+CsdMarutiCarPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: "page-csd-maruti-car",
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./maruti-csd.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/notification/maruti-csd/maruti-csd.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./maruti-csd.scss */ "./src/app/pages/notification/maruti-csd/maruti-csd.scss")).default]
+    })
+], CsdMarutiCarPage);
+
+
 
 /***/ }),
 
@@ -27,6 +83,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./notification */ "./src/app/pages/notification/notification.ts");
+/* harmony import */ var _maruti_csd_maruti_csd__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./maruti-csd/maruti-csd */ "./src/app/pages/notification/maruti-csd/maruti-csd.ts");
+
 
 
 
@@ -34,8 +92,12 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: '',
-        component: _notification__WEBPACK_IMPORTED_MODULE_3__["NotificationPage"]
-    }
+        component: _notification__WEBPACK_IMPORTED_MODULE_3__["NotificationPage"],
+    },
+    {
+        path: 'maruti-csd-car-price',
+        component: _maruti_csd_maruti_csd__WEBPACK_IMPORTED_MODULE_4__["CsdMarutiCarPage"],
+    },
 ];
 let NotificationPageRoutingModule = class NotificationPageRoutingModule {
 };
@@ -67,6 +129,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
 /* harmony import */ var _notification__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./notification */ "./src/app/pages/notification/notification.ts");
 /* harmony import */ var _notification_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./notification-routing.module */ "./src/app/pages/notification/notification-routing.module.ts");
+/* harmony import */ var _maruti_csd_maruti_csd__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./maruti-csd/maruti-csd */ "./src/app/pages/notification/maruti-csd/maruti-csd.ts");
+
 
 
 
@@ -86,6 +150,7 @@ NotificationPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         ],
         declarations: [
             _notification__WEBPACK_IMPORTED_MODULE_5__["NotificationPage"],
+            _maruti_csd_maruti_csd__WEBPACK_IMPORTED_MODULE_7__["CsdMarutiCarPage"]
         ],
         entryComponents: []
     })

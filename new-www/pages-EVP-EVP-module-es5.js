@@ -1,7 +1,3 @@
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["pages-EVP-EVP-module"], {
@@ -21,7 +17,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "";
+    __webpack_exports__["default"] = "<ion-header class=\"animate__animated animate__fadeInDown\">\n  <ion-toolbar class=\"home-header\">\n    <ion-buttons slot=\"start\">\n      <ion-menu-button> </ion-menu-button>\n      <div class=\"brand-logo\" aria-details=\"csd car website logo\">\n        <span>CSD CAR</span>\n      </div>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n        <ion-card>\n            <ion-card-header>\n                <ion-card-title>Frequently Asked Questions</ion-card-title>\n            </ion-card-header>\n            <ion-card-content>\n                <ion-accordion-group>\n                    <ion-accordion toggle>\n                        <ion-item slot=\"header\">\n                            <ion-label>Who can purchase cars from a CSD dealer?</ion-label>\n                        </ion-item>\n                        <div class=\"ion-padding\" slot=\"content\">\n                            Only eligible individuals such as Army ,navy, coastguard , airforce ,Assam ,rafiles \n                            Board road organisation can purchase cars through CSD.\n                        </div>\n                    </ion-accordion>\n\n                    <ion-accordion toggle>\n                        <ion-item slot=\"header\">\n                            <ion-label>What documents are required for a CSD car purchase?</ion-label>\n                        </ion-item>\n                        <div class=\"ion-padding\" slot=\"content\">\n                            Required documents include your Grocery Card, PAN Card, Aadhar Card and other documents.\n                        </div>\n                    </ion-accordion>\n\n                    <ion-accordion toggle>\n                        <ion-item slot=\"header\">\n                            <ion-label>Are CSD cars cheaper than regular cars?</ion-label>\n                        </ion-item>\n                        <div class=\"ion-padding\" slot=\"content\">\n                            Yes, cars purchased through CSD dealers are exempt from certain taxes, making them more affordable than regular market prices.\n                        </div>\n                    </ion-accordion>\n\n                    <ion-accordion toggle>\n                        <ion-item slot=\"header\">\n                            <ion-label>Can I finance my CSD car purchase?</ion-label>\n                        </ion-item>\n                        <div class=\"ion-padding\" slot=\"content\">\n                            Yes, financing options are available through various banks. Ensure that the bank is familiar with the CSD process.\n                        </div>\n                    </ion-accordion>\n\n                    <ion-accordion toggle>\n                        <ion-item slot=\"header\">\n                            <ion-label>How long does it take to deliver a car through CSD?</ion-label>\n                        </ion-item>\n                        <div class=\"ion-padding\" slot=\"content\">\n                            Delivery times vary depending on the availability of the model and the processing of your documentation. Typically, it takes 3-7 days.\n                        </div>\n                    </ion-accordion>\n                </ion-accordion-group>\n            </ion-card-content>\n        </ion-card>\n    </ion-content>";
     /***/
   },
 
@@ -154,7 +150,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     EVPPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
       imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"], _EVP_routing_module__WEBPACK_IMPORTED_MODULE_6__["EVPPageRoutingModule"]],
       declarations: [_EVP__WEBPACK_IMPORTED_MODULE_5__["EVPPage"]],
-      entryComponents: []
+      entryComponents: [],
+      schemas: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["CUSTOM_ELEMENTS_SCHEMA"]] // Add this line
+
     })], EVPPageModule);
     /***/
   },
@@ -175,7 +173,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "ion-fab-button {\n  --background: var(--ion-color-step-150, #fff);\n  --background-hover: var(--ion-color-step-200, #f2f2f2);\n  --background-focused: var(--ion-color-step-250, #d9d9d9);\n  --color: var(--ion-color-primary, #3880ff);\n}\n\n/*\n * Material Design uses the ripple for activated\n * so only style the iOS activated background\n */\n\n.ios ion-fab-button {\n  --background-activated: var(--ion-color-step-250, #d9d9d9);\n}\n\nion-item-sliding[track=ionic] ion-label {\n  border-left: 2px solid var(--ion-color-primary);\n  padding-left: 10px;\n}\n\nion-item-sliding[track=angular] ion-label {\n  border-left: 2px solid #ac282b;\n  padding-left: 10px;\n}\n\nion-item-sliding[track=communication] ion-label {\n  border-left: 2px solid #8e8d93;\n  padding-left: 10px;\n}\n\nion-item-sliding[track=tooling] ion-label {\n  border-left: 2px solid #fe4c52;\n  padding-left: 10px;\n}\n\nion-item-sliding[track=services] ion-label {\n  border-left: 2px solid #fd8b2d;\n  padding-left: 10px;\n}\n\nion-item-sliding[track=design] ion-label {\n  border-left: 2px solid #fed035;\n  padding-left: 10px;\n}\n\nion-item-sliding[track=workshop] ion-label {\n  border-left: 2px solid #69bb7b;\n  padding-left: 10px;\n}\n\nion-item-sliding[track=food] ion-label {\n  border-left: 2px solid #3bc7c4;\n  padding-left: 10px;\n}\n\nion-item-sliding[track=documentation] ion-label {\n  border-left: 2px solid #b16be3;\n  padding-left: 10px;\n}\n\nion-item-sliding[track=navigation] ion-label {\n  border-left: 2px solid #6600cc;\n  padding-left: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9zaGFzaHdhdC9Eb2N1bWVudHMvYm1kYy1jbGllbnQvc3JjL2FwcC9wYWdlcy9FVlAvRVZQLnNjc3MiLCJzcmMvYXBwL3BhZ2VzL0VWUC9FVlAuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLDZDQUFBO0VBQ0Esc0RBQUE7RUFDQSx3REFBQTtFQUVBLDBDQUFBO0FDQUY7O0FER0E7OztFQUFBOztBQUlBO0VBQ0UsMERBQUE7QUNBRjs7QURpQkU7RUFDRSwrQ0FBQTtFQUNBLGtCQUFBO0FDZEo7O0FEWUU7RUFDRSw4QkFBQTtFQUNBLGtCQUFBO0FDVEo7O0FET0U7RUFDRSw4QkFBQTtFQUNBLGtCQUFBO0FDSko7O0FERUU7RUFDRSw4QkFBQTtFQUNBLGtCQUFBO0FDQ0o7O0FESEU7RUFDRSw4QkFBQTtFQUNBLGtCQUFBO0FDTUo7O0FEUkU7RUFDRSw4QkFBQTtFQUNBLGtCQUFBO0FDV0o7O0FEYkU7RUFDRSw4QkFBQTtFQUNBLGtCQUFBO0FDZ0JKOztBRGxCRTtFQUNFLDhCQUFBO0VBQ0Esa0JBQUE7QUNxQko7O0FEdkJFO0VBQ0UsOEJBQUE7RUFDQSxrQkFBQTtBQzBCSjs7QUQ1QkU7RUFDRSw4QkFBQTtFQUNBLGtCQUFBO0FDK0JKIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvRVZQL0VWUC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW9uLWZhYi1idXR0b24ge1xuICAtLWJhY2tncm91bmQ6IHZhcigtLWlvbi1jb2xvci1zdGVwLTE1MCwgI2ZmZik7XG4gIC0tYmFja2dyb3VuZC1ob3ZlcjogdmFyKC0taW9uLWNvbG9yLXN0ZXAtMjAwLCAjZjJmMmYyKTtcbiAgLS1iYWNrZ3JvdW5kLWZvY3VzZWQ6IHZhcigtLWlvbi1jb2xvci1zdGVwLTI1MCwgI2Q5ZDlkOSk7XG5cbiAgLS1jb2xvcjogdmFyKC0taW9uLWNvbG9yLXByaW1hcnksICMzODgwZmYpO1xufVxuXG4vKlxuICogTWF0ZXJpYWwgRGVzaWduIHVzZXMgdGhlIHJpcHBsZSBmb3IgYWN0aXZhdGVkXG4gKiBzbyBvbmx5IHN0eWxlIHRoZSBpT1MgYWN0aXZhdGVkIGJhY2tncm91bmRcbiAqL1xuLmlvcyBpb24tZmFiLWJ1dHRvbiB7XG4gIC0tYmFja2dyb3VuZC1hY3RpdmF0ZWQ6IHZhcigtLWlvbi1jb2xvci1zdGVwLTI1MCwgI2Q5ZDlkOSk7XG59XG5cbiRjYXRlZ29yaWVzOiAoXG4gIGlvbmljOiB2YXIoLS1pb24tY29sb3ItcHJpbWFyeSksXG4gIGFuZ3VsYXI6ICNhYzI4MmIsXG4gIGNvbW11bmljYXRpb246ICM4ZThkOTMsXG4gIHRvb2xpbmc6ICNmZTRjNTIsXG4gIHNlcnZpY2VzOiAjZmQ4YjJkLFxuICBkZXNpZ246ICNmZWQwMzUsXG4gIHdvcmtzaG9wOiAjNjliYjdiLFxuICBmb29kOiAjM2JjN2M0LFxuICBkb2N1bWVudGF0aW9uOiAjYjE2YmUzLFxuICBuYXZpZ2F0aW9uOiAjNjYwMGNjXG4pO1xuXG5AZWFjaCAkdHJhY2ssICR2YWx1ZSBpbiBtYXAtcmVtb3ZlKCRjYXRlZ29yaWVzKSB7XG4gIGlvbi1pdGVtLXNsaWRpbmdbdHJhY2s9JyN7JHRyYWNrfSddIGlvbi1sYWJlbCB7XG4gICAgYm9yZGVyLWxlZnQ6IDJweCBzb2xpZCAkdmFsdWU7XG4gICAgcGFkZGluZy1sZWZ0OiAxMHB4O1xuICB9XG59XG4iLCJpb24tZmFiLWJ1dHRvbiB7XG4gIC0tYmFja2dyb3VuZDogdmFyKC0taW9uLWNvbG9yLXN0ZXAtMTUwLCAjZmZmKTtcbiAgLS1iYWNrZ3JvdW5kLWhvdmVyOiB2YXIoLS1pb24tY29sb3Itc3RlcC0yMDAsICNmMmYyZjIpO1xuICAtLWJhY2tncm91bmQtZm9jdXNlZDogdmFyKC0taW9uLWNvbG9yLXN0ZXAtMjUwLCAjZDlkOWQ5KTtcbiAgLS1jb2xvcjogdmFyKC0taW9uLWNvbG9yLXByaW1hcnksICMzODgwZmYpO1xufVxuXG4vKlxuICogTWF0ZXJpYWwgRGVzaWduIHVzZXMgdGhlIHJpcHBsZSBmb3IgYWN0aXZhdGVkXG4gKiBzbyBvbmx5IHN0eWxlIHRoZSBpT1MgYWN0aXZhdGVkIGJhY2tncm91bmRcbiAqL1xuLmlvcyBpb24tZmFiLWJ1dHRvbiB7XG4gIC0tYmFja2dyb3VuZC1hY3RpdmF0ZWQ6IHZhcigtLWlvbi1jb2xvci1zdGVwLTI1MCwgI2Q5ZDlkOSk7XG59XG5cbmlvbi1pdGVtLXNsaWRpbmdbdHJhY2s9aW9uaWNdIGlvbi1sYWJlbCB7XG4gIGJvcmRlci1sZWZ0OiAycHggc29saWQgdmFyKC0taW9uLWNvbG9yLXByaW1hcnkpO1xuICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG59XG5cbmlvbi1pdGVtLXNsaWRpbmdbdHJhY2s9YW5ndWxhcl0gaW9uLWxhYmVsIHtcbiAgYm9yZGVyLWxlZnQ6IDJweCBzb2xpZCAjYWMyODJiO1xuICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG59XG5cbmlvbi1pdGVtLXNsaWRpbmdbdHJhY2s9Y29tbXVuaWNhdGlvbl0gaW9uLWxhYmVsIHtcbiAgYm9yZGVyLWxlZnQ6IDJweCBzb2xpZCAjOGU4ZDkzO1xuICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG59XG5cbmlvbi1pdGVtLXNsaWRpbmdbdHJhY2s9dG9vbGluZ10gaW9uLWxhYmVsIHtcbiAgYm9yZGVyLWxlZnQ6IDJweCBzb2xpZCAjZmU0YzUyO1xuICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG59XG5cbmlvbi1pdGVtLXNsaWRpbmdbdHJhY2s9c2VydmljZXNdIGlvbi1sYWJlbCB7XG4gIGJvcmRlci1sZWZ0OiAycHggc29saWQgI2ZkOGIyZDtcbiAgcGFkZGluZy1sZWZ0OiAxMHB4O1xufVxuXG5pb24taXRlbS1zbGlkaW5nW3RyYWNrPWRlc2lnbl0gaW9uLWxhYmVsIHtcbiAgYm9yZGVyLWxlZnQ6IDJweCBzb2xpZCAjZmVkMDM1O1xuICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG59XG5cbmlvbi1pdGVtLXNsaWRpbmdbdHJhY2s9d29ya3Nob3BdIGlvbi1sYWJlbCB7XG4gIGJvcmRlci1sZWZ0OiAycHggc29saWQgIzY5YmI3YjtcbiAgcGFkZGluZy1sZWZ0OiAxMHB4O1xufVxuXG5pb24taXRlbS1zbGlkaW5nW3RyYWNrPWZvb2RdIGlvbi1sYWJlbCB7XG4gIGJvcmRlci1sZWZ0OiAycHggc29saWQgIzNiYzdjNDtcbiAgcGFkZGluZy1sZWZ0OiAxMHB4O1xufVxuXG5pb24taXRlbS1zbGlkaW5nW3RyYWNrPWRvY3VtZW50YXRpb25dIGlvbi1sYWJlbCB7XG4gIGJvcmRlci1sZWZ0OiAycHggc29saWQgI2IxNmJlMztcbiAgcGFkZGluZy1sZWZ0OiAxMHB4O1xufVxuXG5pb24taXRlbS1zbGlkaW5nW3RyYWNrPW5hdmlnYXRpb25dIGlvbi1sYWJlbCB7XG4gIGJvcmRlci1sZWZ0OiAycHggc29saWQgIzY2MDBjYztcbiAgcGFkZGluZy1sZWZ0OiAxMHB4O1xufSJdfQ== */";
+    __webpack_exports__["default"] = ".brand-logo span {\n  color: #fff !important;\n  font-size: 20px !important;\n  font-weight: 600 !important;\n  margin-left: 20px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9zaGFzaHdhdC9Eb2N1bWVudHMvYm1kYy1jbGllbnQvc3JjL2FwcC9wYWdlcy9FVlAvRVZQLnNjc3MiLCJzcmMvYXBwL3BhZ2VzL0VWUC9FVlAuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHNCQUFBO0VBQ0EsMEJBQUE7RUFDQSwyQkFBQTtFQUNBLGlCQUFBO0FDQ0YiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9FVlAvRVZQLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnJhbmQtbG9nbyBzcGFuIHtcbiAgY29sb3I6ICNmZmYgIWltcG9ydGFudDtcbiAgZm9udC1zaXplOiAyMHB4ICFpbXBvcnRhbnQ7XG4gIGZvbnQtd2VpZ2h0OiA2MDAgIWltcG9ydGFudDtcbiAgbWFyZ2luLWxlZnQ6IDIwcHg7XG59XG4iLCIuYnJhbmQtbG9nbyBzcGFuIHtcbiAgY29sb3I6ICNmZmYgIWltcG9ydGFudDtcbiAgZm9udC1zaXplOiAyMHB4ICFpbXBvcnRhbnQ7XG4gIGZvbnQtd2VpZ2h0OiA2MDAgIWltcG9ydGFudDtcbiAgbWFyZ2luLWxlZnQ6IDIwcHg7XG59Il19 */";
     /***/
   },
 
@@ -210,85 +208,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
 
-
-    var _providers_product_services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ../../providers/product.services */
-    "./src/app/providers/product.services.ts");
-    /* harmony import */
-
-
-    var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ../../../environments/environment */
-    "./src/environments/environment.ts");
-
-    var EVPPage = /*#__PURE__*/function () {
-      function EVPPage(_ProductService) {
-        _classCallCheck(this, EVPPage);
-
-        this._ProductService = _ProductService;
-        this.baseUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].baseUrl + "/";
-        this.showSearchBox = false;
-        this.isSearchEnable = false;
-        this.searchproductList = [];
-      }
-
-      _createClass(EVPPage, [{
-        key: "ngOnInit",
-        value: function ngOnInit() {
-          this.getProductList();
-        }
-      }, {
-        key: "enableSearch",
-        value: function enableSearch() {
-          this.showSearchBox = true;
-        }
-      }, {
-        key: "backToNormal",
-        value: function backToNormal() {
-          this.showSearchBox = false;
-        }
-      }, {
-        key: "getProductList",
-        value: function getProductList() {
-          var _this = this;
-
-          this._ProductService.getProductList(localStorage.getItem('shopID')).subscribe(function (data) {
-            _this.productList = data;
-            console.log(_this.productList);
-          });
-        }
-      }, {
-        key: "search",
-        value: function search(query) {
-          var _this2 = this;
-
-          if (query.target.value.length >= 2) {
-            this.isSearchEnable = true;
-
-            this._ProductService.search({
-              search: query.target.value,
-              filter: "Product"
-            }, localStorage.getItem('shopID')).subscribe(function (data) {
-              console.log(data, "data");
-              _this2.searchproductList = data.productList;
-            });
-          }
-
-          if (query.target.value.length == 0) {
-            this.isSearchEnable = false; // this.getAnalyticalData()
-          }
-        }
-      }]);
-
-      return EVPPage;
-    }();
-
-    EVPPage.ctorParameters = function () {
-      return [{
-        type: _providers_product_services__WEBPACK_IMPORTED_MODULE_2__["ProductService"]
-      }];
+    var EVPPage = function EVPPage() {
+      _classCallCheck(this, EVPPage);
     };
 
     EVPPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -299,7 +221,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./EVP.scss */
       "./src/app/pages/EVP/EVP.scss"))["default"]]
-    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_providers_product_services__WEBPACK_IMPORTED_MODULE_2__["ProductService"]])], EVPPage);
+    })], EVPPage);
     /***/
   }
 }]);
