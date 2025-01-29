@@ -52,7 +52,7 @@ var NativeAudio = /** @class */ (function (_super) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-tabs>\n  <ion-tab-bar slot=\"bottom\">\n\n    <ion-tab-button tab=\"home\">\n      <ion-icon name=\"home-outline\"></ion-icon>\n      <ion-label>Home</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"csd-car-brands\">\n      <ion-icon name=\"apps\"></ion-icon>\n      <ion-label>Brand</ion-label>\n    </ion-tab-button>\n\n    <!-- <img (click)=\"playCarSound()\" style=\"    height: 54px;\n    width: 65px;\" src=\"../../../assets/img/logo-title.png\"> -->\n    <!-- <audio controls>\n      <source src=\"https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3\" type=\"audio/ogg\">\n      \n    </audio> -->\n    <ion-tab-button tab=\"all-csd-cars\">\n      <ion-icon name=\"car-sport-outline\"></ion-icon>\n      <ion-label>All Cars</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"csd-car-more-pages\">\n        <ion-icon name=\"ellipsis-horizontal-circle-outline\"></ion-icon>\n      <ion-label>More</ion-label>\n    </ion-tab-button>\n \n\n  </ion-tab-bar>\n\n\n\n</ion-tabs>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-tabs>\n  <ion-tab-bar slot=\"bottom\">\n\n    <ion-tab-button tab=\"home\">\n      <ion-icon name=\"home-outline\"></ion-icon>\n      <ion-label>Home</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"csd-car-brands\">\n      <ion-icon name=\"apps\"></ion-icon>\n      <ion-label>Brand</ion-label>\n    </ion-tab-button>\n\n    <!-- <img (click)=\"playCarSound()\" style=\"    height: 54px;\n    width: 65px;\" src=\"../../../assets/img/logo-title.png\"> -->\n    <!-- <audio controls>\n      <source src=\"https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3\" type=\"audio/ogg\">\n      \n    </audio> -->\n    <ion-tab-button tab=\"all-csd-cars\">\n      <ion-icon name=\"car-sport-outline\"></ion-icon>\n      <ion-label>All Cars</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"all-csd-cars/bike\">\n      <ion-icon name=\"car-sport-outline\"></ion-icon>\n      <ion-label>All Bike</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"csd-car-more-pages\">\n        <ion-icon name=\"ellipsis-horizontal-circle-outline\"></ion-icon>\n      <ion-label>More</ion-label>\n    </ion-tab-button>\n \n\n  </ion-tab-bar>\n\n\n\n</ion-tabs>\n");
 
 /***/ }),
 
@@ -89,8 +89,12 @@ const routes = [
             },
             {
                 path: "all-csd-cars",
-                loadChildren: () => __webpack_require__.e(/*! import() | menu-menu-module */ "menu-menu-module").then(__webpack_require__.bind(null, /*! ../menu/menu.module */ "./src/app/pages/menu/menu.module.ts")).then(m => m.MenuPageModule)
+                loadChildren: () => __webpack_require__.e(/*! import() | menu-menu-module */ "menu-menu-module").then(__webpack_require__.bind(null, /*! ../menu/menu.module */ "./src/app/pages/menu/menu.module.ts")).then(m => m.MenuPageModule),
             },
+            // {
+            //   path: "all-csd-cars/cars/bike",
+            //   loadChildren: () => import('../menu/menu.module').then(m => m.MenuPageModule)
+            // },
             {
                 path: "all-csd-cars/:id",
                 loadChildren: () => __webpack_require__.e(/*! import() | menu-menu-module */ "menu-menu-module").then(__webpack_require__.bind(null, /*! ../menu/menu.module */ "./src/app/pages/menu/menu.module.ts")).then(m => m.MenuPageModule)

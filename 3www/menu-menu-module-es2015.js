@@ -11247,7 +11247,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-menu-button>\n        <img src=\"../../../assets/img/menu-bar.png\" alt=\"csd-car-menu\" style=\"width: 22px\" />\n      </ion-menu-button>\n    </ion-buttons>\n    <ion-title *ngIf=\"!isBrandIdExists\"> Cars </ion-title>\n    <ion-title *ngIf=\"isBrandIdExists\" style=\"text-transform: capitalize\"\n      >{{brand_name}}</ion-title\n    >\n\n    <ion-buttons slot=\"end\">\n      <ion-button routerLink=\"/csd-car/search/home\">\n        <ion-icon name=\"search\" style=\"color: white\"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n\n    <ion-buttons slot=\"end\">\n      <ion-button (click)=\"openAdvanceSearch()\">\n        <ion-icon\n          class=\"animate__animated\"\n          slot=\"icon-only\"\n          name=\"funnel-outline\"\n          style=\"\n            color: white;\n            width: 55px;\n            margin-left: -20px;\n            min-width: -webkit-fill-available;\n          \"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <!-- <ion-spinner style=\"margin-left: 49%;\" *ngIf=\"dataLoad\" name=\"lines\"></ion-spinner> -->\n  <nav aria-label=\"breadcrumb\">\n      <ol class=\"breadcrumb\">\n        <li class=\"breadcrumb-item\"><a href=\"/csd-car/home\">Home</a></li>\n        <li class=\"breadcrumb-item\"><a href=\"/csd-car/csd-car-brands\">Car Brands</a></li>\n        <li *ngIf=\"brand_name\" class=\"breadcrumb-item active\" aria-current=\"page\">{{brand_name}}</li>\n      </ol>\n    </nav>\n  <section class=\"ratings-product special-product\" *ngIf=\"productList.length\">\n    <div class=\"content-section\">\n      <ion-row>\n        <button class=\"clear-btn\" (click)=\"clearFilter()\">Clear Filter</button>\n      </ion-row>\n      <div class=\"flex-grid-4\">\n        <div *ngFor=\"let list of productList\" class=\"flex-grid-box\">\n          <div\n            class=\"ratings-slide-item\"\n            [routerLink]=\"['/csd-car/csd-car-details/'+ list._id ]\">\n            <div class=\"ratings-slide-img\">\n              <img [src]=\"list.imageVarients[0]\" alt=\"csd-car-{{list.productName}}\" />\n              <p class=\"tags\">\n                <span class=\"tag tag-pink\">Exclusive</span>\n                <span *ngIf=\"list.discount\" class=\"tag tag-blue\"\n                  >₹ {{list.discount}} Cashback\n                </span>\n              </p>\n            </div>\n            <div class=\"ratings-slide-content\">\n              <h6 class=\"spacel-pro-title\">{{list.productName}}</h6>\n              <!-- <p class=\"ratings-star\">\n              <img src=\"../../../assets/img/star-full.png\" />\n              <img src=\"../../../assets/img/star-full.png\" />\n              <img src=\"../../../assets/img/star-full.png\" />\n              <img src=\"../../../assets/img/star-full.png\" />\n              <img src=\"../../../assets/img/star-half.png\" />\n              <b>{{list.rating}}</b>\n            </p> -->\n              <p class=\"ratings-slide-info\">\n                <span style=\"margin-top: -7px; margin-bottom: 20px\"\n                  >₹ {{list.price}}\n                </span>\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </section>\n</ion-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-menu-button>\n        <img src=\"../../../assets/img/menu-bar.png\" alt=\"csd-car-menu\" style=\"width: 22px\" />\n      </ion-menu-button>\n    </ion-buttons>\n    <ion-title *ngIf=\"!isBrandIdExists\"> Cars </ion-title>\n    <ion-title *ngIf=\"isBrandIdExists\" style=\"text-transform: capitalize\"\n      >{{brand_name}}</ion-title\n    >\n\n    <ion-buttons slot=\"end\">\n      <ion-button routerLink=\"/csd-car/search/home\">\n        <ion-icon name=\"search\" style=\"color: white\"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n\n    <ion-buttons slot=\"end\">\n      <ion-button (click)=\"openAdvanceSearch()\">\n        <ion-icon\n          class=\"animate__animated\"\n          slot=\"icon-only\"\n          name=\"funnel-outline\"\n          style=\"\n            color: white;\n            width: 55px;\n            margin-left: -20px;\n            min-width: -webkit-fill-available;\n          \"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <!-- <ion-spinner style=\"margin-left: 49%;\" *ngIf=\"dataLoad\" name=\"lines\"></ion-spinner> -->\n  <nav aria-label=\"breadcrumb\">\n      <ol class=\"breadcrumb\">\n        <li class=\"breadcrumb-item\"><a href=\"/csd-car/home\">Home</a></li>\n        <li class=\"breadcrumb-item\"><a href=\"/csd-car/csd-car-brands\">Car Brands</a></li>\n        <li *ngIf=\"brand_name\" class=\"breadcrumb-item active\" aria-current=\"page\">{{brand_name}}</li>\n      </ol>\n    </nav>\n  <section class=\"ratings-product special-product\" *ngIf=\"productList.length\">\n    <div class=\"content-section\">\n      <ion-row>\n        <button class=\"clear-btn\" (click)=\"clearFilter()\">Clear Filter</button>\n      </ion-row>\n      <div class=\"flex-grid-4\">\n        <div *ngFor=\"let list of productList\" class=\"flex-grid-box\">\n          <div\n            class=\"ratings-slide-item\"\n            [routerLink]=\"['/csd-car/csd-car-details/'+ list._id ]\">\n            <div class=\"ratings-slide-img\">\n              <img [src]=\"list.imageVarients[0]\" alt=\"csd-car-{{list.productName}}\" />\n              <p class=\"tags\">\n                <!-- <span class=\"tag tag-pink\">Exclusive</span> -->\n                <span *ngIf=\"list.discount\" class=\"tag tag-blue\"\n                  >₹ {{list.discount}} Cashback\n                </span>\n              </p>\n            </div>\n            <div class=\"ratings-slide-content\">\n              <h6 class=\"spacel-pro-title\">{{list.productName}}</h6>\n              <!-- <p class=\"ratings-star\">\n              <img src=\"../../../assets/img/star-full.png\" />\n              <img src=\"../../../assets/img/star-full.png\" />\n              <img src=\"../../../assets/img/star-full.png\" />\n              <img src=\"../../../assets/img/star-full.png\" />\n              <img src=\"../../../assets/img/star-half.png\" />\n              <b>{{list.rating}}</b>\n            </p> -->\n              <p class=\"ratings-slide-info\">\n                <span style=\"margin-top: -7px; margin-bottom: 20px\"\n                  >₹ {{list.price}}\n                </span>\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </section>\n</ion-content>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/menu/components/bike Menu/bikeMenu.html":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/menu/components/bike Menu/bikeMenu.html ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-menu-button>\n        <img src=\"../../../assets/img/menu-bar.png\" alt=\"csd-car-menu\" style=\"width: 22px\" />\n      </ion-menu-button>\n    </ion-buttons>\n    <ion-title *ngIf=\"!isBrandIdExists\"> Bike </ion-title>\n    <ion-title *ngIf=\"isBrandIdExists\" style=\"text-transform: capitalize\"\n      >{{brand_name}}</ion-title\n    >\n\n    <ion-buttons slot=\"end\">\n      <ion-button routerLink=\"/csd-car/search/home\">\n        <ion-icon name=\"search\" style=\"color: white\"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n\n    <ion-buttons slot=\"end\">\n      <ion-button (click)=\"openAdvanceSearch()\">\n        <ion-icon\n          class=\"animate__animated\"\n          slot=\"icon-only\"\n          name=\"funnel-outline\"\n          style=\"\n            color: white;\n            width: 55px;\n            margin-left: -20px;\n            min-width: -webkit-fill-available;\n          \"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <!-- <ion-spinner style=\"margin-left: 49%;\" *ngIf=\"dataLoad\" name=\"lines\"></ion-spinner> -->\n  <nav aria-label=\"breadcrumb\">\n      <ol class=\"breadcrumb\">\n        <li class=\"breadcrumb-item\"><a href=\"/csd-car/home\">Home</a></li>\n        <li class=\"breadcrumb-item\">All Bikes</li>\n        <li *ngIf=\"brand_name\" class=\"breadcrumb-item active\" aria-current=\"page\">{{brand_name}}</li>\n      </ol>\n    </nav>\n  <section class=\"ratings-product special-product\" *ngIf=\"productList.length\">\n    <div class=\"content-section\">\n      <!-- <ion-row>\n        <button class=\"clear-btn\" (click)=\"clearFilter()\">Clear Filter</button>\n      </ion-row> -->\n      <div class=\"flex-grid-4\">\n        <div *ngFor=\"let list of productList\" class=\"flex-grid-box\">\n          <div\n            class=\"ratings-slide-item\"\n            [routerLink]=\"['/csd-car/csd-bike-details/'+ list._id ]\">\n            <div class=\"ratings-slide-img\">\n              <img [src]=\"list.imageVarients[0]\" alt=\"csd-bike-{{list.productName}}\" />\n              <!-- <p class=\"tags\">\n                <span class=\"tag tag-pink\">Exclusive</span>\n                <span *ngIf=\"list.discount\" class=\"tag tag-blue\"\n                  >₹ {{list.discount}} Cashback\n                </span>\n              </p> -->\n            </div>\n            <div class=\"ratings-slide-content\">\n              <h6 class=\"spacel-pro-title\">{{list.productName}}</h6>\n              <!-- <p class=\"ratings-star\">\n              <img src=\"../../../assets/img/star-full.png\" />\n              <img src=\"../../../assets/img/star-full.png\" />\n              <img src=\"../../../assets/img/star-full.png\" />\n              <img src=\"../../../assets/img/star-full.png\" />\n              <img src=\"../../../assets/img/star-half.png\" />\n              <b>{{list.rating}}</b>\n            </p> --><br>\n              <p class=\"ratings-slide-info\">\n                <span style=\"margin-top: -7px; margin-bottom: 20px\"\n                  >\n                  <b>CSD Price :</b>  ₹ {{list.discount}}<br/>\n                  <b>Insurace :</b> ₹ {{list.enquiryCount}}<br/>\n                  <b>Registration :</b> ₹ {{list.price}}<br/>\n                  <b>Total :</b> ₹ {{list.discount + list.enquiryCount + list.price}}\n              </span>\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </section>\n</ion-content>\n");
 
 /***/ }),
 
@@ -11495,7 +11508,9 @@ let ViewMenuPage = class ViewMenuPage {
         let shopId = localStorage.getItem("shopID");
         this._ProductService.getProductList(shopId, params).subscribe((data) => {
             console.log(this.productList, "this.productList");
-            this.productList = data;
+            this.productList = data.filter((el) => {
+                return el.addCustomeFeatures.type !== 'bike';
+            });
             this.isDataLoaded = true;
             this.productList = this.productList.map((obj) => (Object.assign({}, obj, { QTY: 0 })));
             this.presentLoading();
@@ -11575,6 +11590,187 @@ ViewMenuPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
         _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"]])
 ], ViewMenuPage);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/menu/components/bike Menu/bikeMenu.scss":
+/*!***************************************************************!*\
+  !*** ./src/app/pages/menu/components/bike Menu/bikeMenu.scss ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".ratings-slide-item {\n  margin: 7px;\n}\n\n.ratings-slide-img {\n  position: relative;\n}\n\n.ratings-slide-img img {\n  height: 132px;\n  border-radius: 5px;\n}\n\n.ratings-slide-img span.offer {\n  position: absolute;\n  left: -7px;\n  background-color: rgba(0, 0, 0, 0.72);\n  z-index: 1;\n  color: #fff;\n  padding: 7px 10px;\n  top: 10px;\n  font-size: 12px;\n}\n\n.ratings-slide-img span.offer:after {\n  content: \"\";\n  display: block;\n  left: 1px;\n  bottom: -4px;\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-left: 5px solid transparent;\n  border-right: 5px solid transparent;\n  border-bottom: 5px solid rgba(0, 0, 0, 0.72);\n  transform: rotate(45deg);\n}\n\n.ratings-product {\n  background-color: var(--ion-background-color);\n  padding-top: 15px;\n  border-bottom: 1px solid var(--ion-border-color);\n}\n\n.ratings-product h5 {\n  margin-top: 0px;\n  padding: 0px 15px;\n  position: relative;\n}\n\n.ratings-product h5 span {\n  display: block;\n  color: #8e8e8e;\n  font-size: 16px;\n  font-weight: normal;\n}\n\n.ratings-product h5 a {\n  position: absolute;\n  right: 15px;\n  top: 8px;\n  text-decoration: none;\n  color: #2dd36f;\n}\n\n.ratings-product p.ratings-star img {\n  width: 14px !important;\n  height: 14px;\n}\n\n.ratings-product .ratings-slide-content {\n  text-align: left;\n  margin-left: 22px;\n  text-transform: capitalize;\n}\n\n.ratings-product .ratings-slide-content h5 {\n  padding: 0px;\n  margin: 0px;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  width: 122px;\n  display: inline-block;\n  margin: 0px;\n}\n\n.ratings-product .ratings-slide-content .ratings-star {\n  margin: 0px;\n  font-size: 14px;\n}\n\n.ratings-product .ratings-slide-content .ratings-star img {\n  margin-right: 5px;\n}\n\n.ratings-product .ratings-slide-content .ratings-star span {\n  color: #898989;\n}\n\n.ratings-product .ratings-slide-content p.ratings-slide-info {\n  margin: 5px 0px;\n  font-size: 16px;\n}\n\n.ratings-product .ratings-slide-content p.ratings-slide-info span {\n  display: block;\n  color: var(--ion-text-color);\n  font-size: 16px;\n}\n\n.special-product .ratings-slide-item {\n  margin: 0px;\n}\n\n.special-product .ratings-slide-img {\n  position: relative;\n}\n\n.special-product .ratings-slide-img img {\n  height: 200px;\n  -o-object-fit: cover;\n     object-fit: cover;\n  width: 90%;\n  margin-left: 20px;\n}\n\n.special-product .ratings-slide-img p.tags {\n  position: absolute;\n  bottom: 0px;\n  left: 35px;\n}\n\n.special-product .ratings-slide-img p.tags span.tag {\n  font-size: 12px;\n  padding: 5px;\n  margin-right: 10px;\n  color: #fff;\n  border-radius: 3px;\n}\n\n.tag-pink {\n  background-color: #ed5a6b;\n}\n\n.tag-blue {\n  background-color: #5197eb;\n}\n\n.my-custom-modal-css .modal-wrapper {\n  height: 20%;\n  top: 80%;\n  position: absolute;\n  display: block;\n}\n\n.select-modal {\n  background: rgba(0, 0, 0, 0.5) !important;\n  padding: 20% 10% !important;\n}\n\n.clear-btn {\n  padding: 10px;\n  /* float: right; */\n  margin-top: 14px;\n  margin-right: 10px;\n  margin-bottom: 18px;\n  margin-left: 18px;\n  float: right;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9zaGFzaHdhdC9Eb2N1bWVudHMvYm1kYy1jbGllbnQvc3JjL2FwcC9wYWdlcy9tZW51L2NvbXBvbmVudHMvYmlrZSBNZW51L2Jpa2VNZW51LnNjc3MiLCJzcmMvYXBwL3BhZ2VzL21lbnUvY29tcG9uZW50cy9iaWtlIE1lbnUvYmlrZU1lbnUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNFLFdBQUE7QUNBRjs7QURFQTtFQUNFLGtCQUFBO0FDQ0Y7O0FEQ0E7RUFDRSxhQUFBO0VBQ0Esa0JBQUE7QUNFRjs7QURBQTtFQUNFLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLHFDQUFBO0VBQ0EsVUFBQTtFQUNBLFdBQUE7RUFDQSxpQkFBQTtFQUNBLFNBQUE7RUFDQSxlQUFBO0FDR0Y7O0FEREE7RUFDRSxXQUFBO0VBQ0EsY0FBQTtFQUNBLFNBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxRQUFBO0VBQ0EsU0FBQTtFQUNBLGtDQUFBO0VBQ0EsbUNBQUE7RUFDQSw0Q0FBQTtFQUNBLHdCQUFBO0FDSUY7O0FERkE7RUFDRSw2Q0FBQTtFQUNBLGlCQUFBO0VBQ0EsZ0RBQUE7QUNLRjs7QURIQTtFQUNFLGVBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0FDTUY7O0FESkE7RUFDRSxjQUFBO0VBQ0EsY0FBQTtFQUNBLGVBQUE7RUFDQSxtQkFBQTtBQ09GOztBRExBO0VBQ0Usa0JBQUE7RUFDQSxXQUFBO0VBQ0EsUUFBQTtFQUNBLHFCQUFBO0VBQ0EsY0FBQTtBQ1FGOztBRE5BO0VBQ0Usc0JBQUE7RUFDQSxZQUFBO0FDU0Y7O0FEUEE7RUFDRSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsMEJBQUE7QUNVRjs7QURSQTtFQUNFLFlBQUE7RUFDQSxXQUFBO0VBQ0EsZ0JBQUE7RUFDQSxtQkFBQTtFQUNBLHVCQUFBO0VBQ0EsWUFBQTtFQUNBLHFCQUFBO0VBQ0EsV0FBQTtBQ1dGOztBRFRBO0VBQ0UsV0FBQTtFQUNBLGVBQUE7QUNZRjs7QURWQTtFQUNFLGlCQUFBO0FDYUY7O0FEWEE7RUFDRSxjQUFBO0FDY0Y7O0FEWkE7RUFDRSxlQUFBO0VBQ0EsZUFBQTtBQ2VGOztBRGJBO0VBQ0UsY0FBQTtFQUNBLDRCQUFBO0VBQ0EsZUFBQTtBQ2dCRjs7QURkQTtFQUNFLFdBQUE7QUNpQkY7O0FEZkE7RUFDRSxrQkFBQTtBQ2tCRjs7QURoQkE7RUFDRSxhQUFBO0VBQ0Esb0JBQUE7S0FBQSxpQkFBQTtFQUNBLFVBQUE7RUFDQSxpQkFBQTtBQ21CRjs7QURqQkE7RUFDRSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxVQUFBO0FDb0JGOztBRGxCQTtFQUNFLGVBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7QUNxQkY7O0FEbkJBO0VBQ0UseUJBQUE7QUNzQkY7O0FEcEJBO0VBQ0UseUJBQUE7QUN1QkY7O0FEcEJBO0VBQ0UsV0FBQTtFQUNBLFFBQUE7RUFDQSxrQkFBQTtFQUNBLGNBQUE7QUN1QkY7O0FEcEJBO0VBQ0UseUNBQUE7RUFDQSwyQkFBQTtBQ3VCRjs7QURwQkE7RUFDRSxhQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtFQUNBLFlBQUE7QUN1QkYiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9tZW51L2NvbXBvbmVudHMvYmlrZSBNZW51L2Jpa2VNZW51LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5yYXRpbmdzLXNsaWRlLWl0ZW0ge1xuICBtYXJnaW46IDdweDtcbn1cbi5yYXRpbmdzLXNsaWRlLWltZyB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cbi5yYXRpbmdzLXNsaWRlLWltZyBpbWcge1xuICBoZWlnaHQ6IDEzMnB4O1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG59XG4ucmF0aW5ncy1zbGlkZS1pbWcgc3Bhbi5vZmZlciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogLTdweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjcyKTtcbiAgei1pbmRleDogMTtcbiAgY29sb3I6ICNmZmY7XG4gIHBhZGRpbmc6IDdweCAxMHB4O1xuICB0b3A6IDEwcHg7XG4gIGZvbnQtc2l6ZTogMTJweDtcbn1cbi5yYXRpbmdzLXNsaWRlLWltZyBzcGFuLm9mZmVyOmFmdGVyIHtcbiAgY29udGVudDogXCJcIjtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGxlZnQ6IDFweDtcbiAgYm90dG9tOiAtNHB4O1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHdpZHRoOiAwO1xuICBoZWlnaHQ6IDA7XG4gIGJvcmRlci1sZWZ0OiA1cHggc29saWQgdHJhbnNwYXJlbnQ7XG4gIGJvcmRlci1yaWdodDogNXB4IHNvbGlkIHRyYW5zcGFyZW50O1xuICBib3JkZXItYm90dG9tOiA1cHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjcyKTtcbiAgdHJhbnNmb3JtOiByb3RhdGUoNDVkZWcpO1xufVxuLnJhdGluZ3MtcHJvZHVjdCB7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWlvbi1iYWNrZ3JvdW5kLWNvbG9yKTtcbiAgcGFkZGluZy10b3A6IDE1cHg7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCB2YXIoLS1pb24tYm9yZGVyLWNvbG9yKTtcbn1cbi5yYXRpbmdzLXByb2R1Y3QgaDUge1xuICBtYXJnaW4tdG9wOiAwcHg7XG4gIHBhZGRpbmc6IDBweCAxNXB4O1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG4ucmF0aW5ncy1wcm9kdWN0IGg1IHNwYW4ge1xuICBkaXNwbGF5OiBibG9jaztcbiAgY29sb3I6ICM4ZThlOGU7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbn1cbi5yYXRpbmdzLXByb2R1Y3QgaDUgYSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcmlnaHQ6IDE1cHg7XG4gIHRvcDogOHB4O1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIGNvbG9yOiAjMmRkMzZmO1xufVxuLnJhdGluZ3MtcHJvZHVjdCBwLnJhdGluZ3Mtc3RhciBpbWcge1xuICB3aWR0aDogMTRweCAhaW1wb3J0YW50O1xuICBoZWlnaHQ6IDE0cHg7XG59XG4ucmF0aW5ncy1wcm9kdWN0IC5yYXRpbmdzLXNsaWRlLWNvbnRlbnQge1xuICB0ZXh0LWFsaWduOiBsZWZ0O1xuICBtYXJnaW4tbGVmdDogMjJweDtcbiAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG59XG4ucmF0aW5ncy1wcm9kdWN0IC5yYXRpbmdzLXNsaWRlLWNvbnRlbnQgaDUge1xuICBwYWRkaW5nOiAwcHg7XG4gIG1hcmdpbjogMHB4O1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcbiAgd2lkdGg6IDEyMnB4O1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIG1hcmdpbjogMHB4O1xufVxuLnJhdGluZ3MtcHJvZHVjdCAucmF0aW5ncy1zbGlkZS1jb250ZW50IC5yYXRpbmdzLXN0YXIge1xuICBtYXJnaW46IDBweDtcbiAgZm9udC1zaXplOiAxNHB4O1xufVxuLnJhdGluZ3MtcHJvZHVjdCAucmF0aW5ncy1zbGlkZS1jb250ZW50IC5yYXRpbmdzLXN0YXIgaW1nIHtcbiAgbWFyZ2luLXJpZ2h0OiA1cHg7XG59XG4ucmF0aW5ncy1wcm9kdWN0IC5yYXRpbmdzLXNsaWRlLWNvbnRlbnQgLnJhdGluZ3Mtc3RhciBzcGFuIHtcbiAgY29sb3I6ICM4OTg5ODk7XG59XG4ucmF0aW5ncy1wcm9kdWN0IC5yYXRpbmdzLXNsaWRlLWNvbnRlbnQgcC5yYXRpbmdzLXNsaWRlLWluZm8ge1xuICBtYXJnaW46IDVweCAwcHg7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cbi5yYXRpbmdzLXByb2R1Y3QgLnJhdGluZ3Mtc2xpZGUtY29udGVudCBwLnJhdGluZ3Mtc2xpZGUtaW5mbyBzcGFuIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGNvbG9yOiB2YXIoLS1pb24tdGV4dC1jb2xvcik7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cbi5zcGVjaWFsLXByb2R1Y3QgLnJhdGluZ3Mtc2xpZGUtaXRlbSB7XG4gIG1hcmdpbjogMHB4O1xufVxuLnNwZWNpYWwtcHJvZHVjdCAucmF0aW5ncy1zbGlkZS1pbWcge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG4uc3BlY2lhbC1wcm9kdWN0IC5yYXRpbmdzLXNsaWRlLWltZyBpbWcge1xuICBoZWlnaHQ6IDIwMHB4O1xuICBvYmplY3QtZml0OiBjb3ZlcjtcbiAgd2lkdGg6IDkwJTtcbiAgbWFyZ2luLWxlZnQ6IDIwcHg7XG59XG4uc3BlY2lhbC1wcm9kdWN0IC5yYXRpbmdzLXNsaWRlLWltZyBwLnRhZ3Mge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGJvdHRvbTogMHB4O1xuICBsZWZ0OiAzNXB4O1xufVxuLnNwZWNpYWwtcHJvZHVjdCAucmF0aW5ncy1zbGlkZS1pbWcgcC50YWdzIHNwYW4udGFnIHtcbiAgZm9udC1zaXplOiAxMnB4O1xuICBwYWRkaW5nOiA1cHg7XG4gIG1hcmdpbi1yaWdodDogMTBweDtcbiAgY29sb3I6ICNmZmY7XG4gIGJvcmRlci1yYWRpdXM6IDNweDtcbn1cbi50YWctcGluayB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNlZDVhNmI7XG59XG4udGFnLWJsdWUge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNTE5N2ViO1xufVxuXG4ubXktY3VzdG9tLW1vZGFsLWNzcyAubW9kYWwtd3JhcHBlciB7XG4gIGhlaWdodDogMjAlO1xuICB0b3A6IDgwJTtcbiAgcG9zaXRpb246IGFic29sdXRlOyBcbiAgZGlzcGxheTogYmxvY2s7ICBcbn1cblxuLnNlbGVjdC1tb2RhbCB7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KSAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAyMCUgMTAlICAhaW1wb3J0YW50O1xufVxuXG4uY2xlYXItYnRue1xuICBwYWRkaW5nOiAxMHB4O1xuICAvKiBmbG9hdDogcmlnaHQ7ICovXG4gIG1hcmdpbi10b3A6IDE0cHg7XG4gIG1hcmdpbi1yaWdodDogMTBweDtcbiAgbWFyZ2luLWJvdHRvbTogMThweDtcbiAgbWFyZ2luLWxlZnQ6IDE4cHg7XG4gIGZsb2F0OiByaWdodDtcblxufSIsIi5yYXRpbmdzLXNsaWRlLWl0ZW0ge1xuICBtYXJnaW46IDdweDtcbn1cblxuLnJhdGluZ3Mtc2xpZGUtaW1nIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xufVxuXG4ucmF0aW5ncy1zbGlkZS1pbWcgaW1nIHtcbiAgaGVpZ2h0OiAxMzJweDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xufVxuXG4ucmF0aW5ncy1zbGlkZS1pbWcgc3Bhbi5vZmZlciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogLTdweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjcyKTtcbiAgei1pbmRleDogMTtcbiAgY29sb3I6ICNmZmY7XG4gIHBhZGRpbmc6IDdweCAxMHB4O1xuICB0b3A6IDEwcHg7XG4gIGZvbnQtc2l6ZTogMTJweDtcbn1cblxuLnJhdGluZ3Mtc2xpZGUtaW1nIHNwYW4ub2ZmZXI6YWZ0ZXIge1xuICBjb250ZW50OiBcIlwiO1xuICBkaXNwbGF5OiBibG9jaztcbiAgbGVmdDogMXB4O1xuICBib3R0b206IC00cHg7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDA7XG4gIGhlaWdodDogMDtcbiAgYm9yZGVyLWxlZnQ6IDVweCBzb2xpZCB0cmFuc3BhcmVudDtcbiAgYm9yZGVyLXJpZ2h0OiA1cHggc29saWQgdHJhbnNwYXJlbnQ7XG4gIGJvcmRlci1ib3R0b206IDVweCBzb2xpZCByZ2JhKDAsIDAsIDAsIDAuNzIpO1xuICB0cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG59XG5cbi5yYXRpbmdzLXByb2R1Y3Qge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1pb24tYmFja2dyb3VuZC1jb2xvcik7XG4gIHBhZGRpbmctdG9wOiAxNXB4O1xuICBib3JkZXItYm90dG9tOiAxcHggc29saWQgdmFyKC0taW9uLWJvcmRlci1jb2xvcik7XG59XG5cbi5yYXRpbmdzLXByb2R1Y3QgaDUge1xuICBtYXJnaW4tdG9wOiAwcHg7XG4gIHBhZGRpbmc6IDBweCAxNXB4O1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG5cbi5yYXRpbmdzLXByb2R1Y3QgaDUgc3BhbiB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBjb2xvcjogIzhlOGU4ZTtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBmb250LXdlaWdodDogbm9ybWFsO1xufVxuXG4ucmF0aW5ncy1wcm9kdWN0IGg1IGEge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHJpZ2h0OiAxNXB4O1xuICB0b3A6IDhweDtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBjb2xvcjogIzJkZDM2Zjtcbn1cblxuLnJhdGluZ3MtcHJvZHVjdCBwLnJhdGluZ3Mtc3RhciBpbWcge1xuICB3aWR0aDogMTRweCAhaW1wb3J0YW50O1xuICBoZWlnaHQ6IDE0cHg7XG59XG5cbi5yYXRpbmdzLXByb2R1Y3QgLnJhdGluZ3Mtc2xpZGUtY29udGVudCB7XG4gIHRleHQtYWxpZ246IGxlZnQ7XG4gIG1hcmdpbi1sZWZ0OiAyMnB4O1xuICB0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZTtcbn1cblxuLnJhdGluZ3MtcHJvZHVjdCAucmF0aW5ncy1zbGlkZS1jb250ZW50IGg1IHtcbiAgcGFkZGluZzogMHB4O1xuICBtYXJnaW46IDBweDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gIHdpZHRoOiAxMjJweDtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBtYXJnaW46IDBweDtcbn1cblxuLnJhdGluZ3MtcHJvZHVjdCAucmF0aW5ncy1zbGlkZS1jb250ZW50IC5yYXRpbmdzLXN0YXIge1xuICBtYXJnaW46IDBweDtcbiAgZm9udC1zaXplOiAxNHB4O1xufVxuXG4ucmF0aW5ncy1wcm9kdWN0IC5yYXRpbmdzLXNsaWRlLWNvbnRlbnQgLnJhdGluZ3Mtc3RhciBpbWcge1xuICBtYXJnaW4tcmlnaHQ6IDVweDtcbn1cblxuLnJhdGluZ3MtcHJvZHVjdCAucmF0aW5ncy1zbGlkZS1jb250ZW50IC5yYXRpbmdzLXN0YXIgc3BhbiB7XG4gIGNvbG9yOiAjODk4OTg5O1xufVxuXG4ucmF0aW5ncy1wcm9kdWN0IC5yYXRpbmdzLXNsaWRlLWNvbnRlbnQgcC5yYXRpbmdzLXNsaWRlLWluZm8ge1xuICBtYXJnaW46IDVweCAwcHg7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cblxuLnJhdGluZ3MtcHJvZHVjdCAucmF0aW5ncy1zbGlkZS1jb250ZW50IHAucmF0aW5ncy1zbGlkZS1pbmZvIHNwYW4ge1xuICBkaXNwbGF5OiBibG9jaztcbiAgY29sb3I6IHZhcigtLWlvbi10ZXh0LWNvbG9yKTtcbiAgZm9udC1zaXplOiAxNnB4O1xufVxuXG4uc3BlY2lhbC1wcm9kdWN0IC5yYXRpbmdzLXNsaWRlLWl0ZW0ge1xuICBtYXJnaW46IDBweDtcbn1cblxuLnNwZWNpYWwtcHJvZHVjdCAucmF0aW5ncy1zbGlkZS1pbWcge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG5cbi5zcGVjaWFsLXByb2R1Y3QgLnJhdGluZ3Mtc2xpZGUtaW1nIGltZyB7XG4gIGhlaWdodDogMjAwcHg7XG4gIG9iamVjdC1maXQ6IGNvdmVyO1xuICB3aWR0aDogOTAlO1xuICBtYXJnaW4tbGVmdDogMjBweDtcbn1cblxuLnNwZWNpYWwtcHJvZHVjdCAucmF0aW5ncy1zbGlkZS1pbWcgcC50YWdzIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBib3R0b206IDBweDtcbiAgbGVmdDogMzVweDtcbn1cblxuLnNwZWNpYWwtcHJvZHVjdCAucmF0aW5ncy1zbGlkZS1pbWcgcC50YWdzIHNwYW4udGFnIHtcbiAgZm9udC1zaXplOiAxMnB4O1xuICBwYWRkaW5nOiA1cHg7XG4gIG1hcmdpbi1yaWdodDogMTBweDtcbiAgY29sb3I6ICNmZmY7XG4gIGJvcmRlci1yYWRpdXM6IDNweDtcbn1cblxuLnRhZy1waW5rIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2VkNWE2Yjtcbn1cblxuLnRhZy1ibHVlIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzUxOTdlYjtcbn1cblxuLm15LWN1c3RvbS1tb2RhbC1jc3MgLm1vZGFsLXdyYXBwZXIge1xuICBoZWlnaHQ6IDIwJTtcbiAgdG9wOiA4MCU7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogYmxvY2s7XG59XG5cbi5zZWxlY3QtbW9kYWwge1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSkgIWltcG9ydGFudDtcbiAgcGFkZGluZzogMjAlIDEwJSAhaW1wb3J0YW50O1xufVxuXG4uY2xlYXItYnRuIHtcbiAgcGFkZGluZzogMTBweDtcbiAgLyogZmxvYXQ6IHJpZ2h0OyAqL1xuICBtYXJnaW4tdG9wOiAxNHB4O1xuICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG4gIG1hcmdpbi1ib3R0b206IDE4cHg7XG4gIG1hcmdpbi1sZWZ0OiAxOHB4O1xuICBmbG9hdDogcmlnaHQ7XG59Il19 */");
+
+/***/ }),
+
+/***/ "./src/app/pages/menu/components/bike Menu/bikeMenu.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/pages/menu/components/bike Menu/bikeMenu.ts ***!
+  \*************************************************************/
+/*! exports provided: BikeMenuPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BikeMenuPage", function() { return BikeMenuPage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _providers_product_services__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../providers/product.services */ "./src/app/providers/product.services.ts");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _advance_serach_advance_search__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../advance-serach/advance-search */ "./src/app/pages/menu/advance-serach/advance-search.ts");
+
+
+
+
+
+
+
+
+let BikeMenuPage = class BikeMenuPage {
+    constructor(_ProductService, http, Router, modalController, route, loadingController) {
+        this._ProductService = _ProductService;
+        this.http = http;
+        this.Router = Router;
+        this.modalController = modalController;
+        this.route = route;
+        this.loadingController = loadingController;
+        this.productList = [];
+        this.isDataLoaded = false;
+        this.isBrandIdExists = false;
+        this.brand_name = 'Brand';
+        this.dataLoad = false;
+    }
+    ngOnInit() {
+        let brand_id = this.route.snapshot.queryParams["brand_id"];
+        this.brand_name = this.route.snapshot.queryParams["brand_name"];
+        console.log(this.brand_name, "brand_id");
+        console.log(this.route.snapshot, "--> brand_id");
+        let from = this.route.snapshot.queryParams["price_from"];
+        let to = this.route.snapshot.queryParams["price_to"];
+        let payload = {};
+        if (from & to) {
+            payload['price_from'] = from;
+            payload['price_to'] = to;
+        }
+        if (brand_id) {
+            this.isBrandIdExists = true;
+            payload['brand_id'] = brand_id;
+        }
+        this.getProductList(payload);
+    }
+    ionViewWillEnter() {
+        let brand_id = this.route.snapshot.queryParams["brand_id"];
+        this.brand_name = this.route.snapshot.queryParams["brand_name"];
+        console.log(brand_id, "brand_id");
+        console.log(this.route.snapshot, "--> brand_id");
+        let from = this.route.snapshot.queryParams["price_from"];
+        let to = this.route.snapshot.queryParams["price_to"];
+        let payload = {};
+        if (from & to) {
+            payload['price_from'] = from;
+            payload['price_to'] = to;
+        }
+        if (brand_id) {
+            this.isBrandIdExists = true;
+            payload['brand_id'] = brand_id;
+        }
+        this.getProductList(payload);
+    }
+    getProductList(filters = {}) {
+        let params = Object.keys(filters).map(k => `${encodeURIComponent(k)}=${encodeURIComponent(filters[k])}`).join('&');
+        console.log(params, "params");
+        let shopId = localStorage.getItem("shopID");
+        this._ProductService.getProductList(shopId, params).subscribe((data) => {
+            console.log(this.productList, "this.productList");
+            this.productList = data.filter((el) => {
+                return el.addCustomeFeatures.type == 'bike';
+            });
+            this.isDataLoaded = true;
+            this.productList = this.productList.map((obj) => (Object.assign({}, obj, { QTY: 0 })));
+            this.presentLoading();
+            this.productList.forEach((product) => {
+                product.price = parseInt(product.price) || 0;
+                // this.convertIntoLakh(product.price)
+            });
+            // console.log(this.productList);
+        });
+    }
+    convertIntoLakh(value) {
+        let arr = value.split("-");
+        var v1 = '';
+        var v2 = '';
+        if (arr.length == 2) {
+            v1 = Math.abs(arr[0]);
+            v2 = Math.abs(arr[1]);
+            v1 = (v1 / 100000).toFixed(2);
+            v2 = (v2 / 100000).toFixed(2);
+        }
+        else {
+            v1 = Math.abs(arr[0]);
+            v1 = (v1 / 100000).toFixed(2);
+        }
+        let second = (v2) ? " - " + v2 : '';
+        return v1 + second + ' Lakh';
+    }
+    clearFilter() {
+        this.isBrandIdExists = false;
+        this.dataLoad = false;
+        this.getProductList();
+    }
+    openAdvanceSearch() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const myModal = yield this.modalController.create({
+                component: _advance_serach_advance_search__WEBPACK_IMPORTED_MODULE_6__["AdvanceSearchModelPage"],
+                cssClass: 'select-modal'
+            });
+            yield myModal.present();
+            const { data } = yield myModal.onWillDismiss();
+            console.log(data);
+            this.getProductList(data.selectedFilters);
+            return;
+        });
+    }
+    presentLoading() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const loading = yield this.loadingController.create({
+                cssClass: 'my-custom-class',
+                message: 'Please wait...',
+                duration: 700
+            });
+            yield loading.present();
+            const { role, data } = yield loading.onDidDismiss();
+            console.log('Loading dismissed!');
+        });
+    }
+};
+BikeMenuPage.ctorParameters = () => [
+    { type: _providers_product_services__WEBPACK_IMPORTED_MODULE_3__["ProductService"] },
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClient"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ModalController"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"] }
+];
+BikeMenuPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: "page-bikeMenu",
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./bikeMenu.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/menu/components/bike Menu/bikeMenu.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./bikeMenu.scss */ "./src/app/pages/menu/components/bike Menu/bikeMenu.scss")).default]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_providers_product_services__WEBPACK_IMPORTED_MODULE_3__["ProductService"],
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClient"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ModalController"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"]])
+], BikeMenuPage);
 
 
 
@@ -11903,6 +12099,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _components_View_Menu_viewMenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/View Menu/viewMenu */ "./src/app/pages/menu/components/View Menu/viewMenu.ts");
+/* harmony import */ var _components_bike_Menu_bikeMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/bike Menu/bikeMenu */ "./src/app/pages/menu/components/bike Menu/bikeMenu.ts");
+
 
 
 
@@ -11911,7 +12109,16 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: '',
+        redirectTo: 'cars',
+        pathMatch: 'full',
+    },
+    {
+        path: 'cars',
         component: _components_View_Menu_viewMenu__WEBPACK_IMPORTED_MODULE_3__["ViewMenuPage"],
+    },
+    {
+        path: 'bike',
+        component: _components_bike_Menu_bikeMenu__WEBPACK_IMPORTED_MODULE_4__["BikeMenuPage"],
     },
 ];
 let MenuPageRoutingModule = class MenuPageRoutingModule {
@@ -11949,6 +12156,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _providers_shop_services__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../providers/shop.services */ "./src/app/providers/shop.services.ts");
 /* harmony import */ var _advance_serach_advance_search__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./advance-serach/advance-search */ "./src/app/pages/menu/advance-serach/advance-search.ts");
 /* harmony import */ var _components_tabMenu_tabMenu__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/tabMenu/tabMenu */ "./src/app/pages/menu/components/tabMenu/tabMenu.ts");
+/* harmony import */ var _components_bike_Menu_bikeMenu__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/bike Menu/bikeMenu */ "./src/app/pages/menu/components/bike Menu/bikeMenu.ts");
+
 
 
 
@@ -11979,6 +12188,7 @@ MenuPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _advance_serach_advance_search__WEBPACK_IMPORTED_MODULE_10__["AdvanceSearchModelPage"],
             _components_View_Menu_viewMenu__WEBPACK_IMPORTED_MODULE_8__["ViewMenuPage"],
             _components_tabMenu_tabMenu__WEBPACK_IMPORTED_MODULE_11__["TabMenuPage"],
+            _components_bike_Menu_bikeMenu__WEBPACK_IMPORTED_MODULE_12__["BikeMenuPage"]
         ],
         providers: [_providers_shop_services__WEBPACK_IMPORTED_MODULE_9__["ShopService"]],
         entryComponents: [_advance_serach_advance_search__WEBPACK_IMPORTED_MODULE_10__["AdvanceSearchModelPage"]
